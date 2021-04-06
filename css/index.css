@@ -1,3 +1,717 @@
 @charset "UTF-8";
 
-/* hero CSS */
+/* main CSS */
+
+/* spot CSS */
+.spot {
+   height: 822px;
+   position: relative;
+}
+
+.spot img {
+   width: 100%;
+   height: 822px;
+}
+
+.spot_bg {
+   overflow: hidden;
+   min-width: 1325px;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 822px;
+   background: url(../img/spot_bg_area.png) 50% 0 no-repeat;
+   background-size: 2279px 822px;
+}
+
+.spot_img_area {
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 822px;
+   min-width: 1325px;
+}
+
+.spot_img {
+   position: absolute;
+   left: 50%;
+}
+
+.list1 {
+   top: 205px;
+   width: 243px;
+   height: 213px;
+   margin-left: -956px;
+   background: url(../img/spot_ico1.png) 0 0 no-repeat;
+   background-size: 243px 213px;
+   z-index: 110;
+}
+
+.list2 {
+   top: 226px;
+   width: 513px;
+   height: 550px;
+   margin-left: -644px;
+   background: url(../img/spot_ico2.png) 0 0 no-repeat;
+   background-size: 513px 550px;
+   z-index: 110;
+}
+
+.list3 {
+   top: 145px;
+   width: 399px;
+   height: 381px;
+   margin-left: -200px;
+   background: url(../img/spot_logo.png) 0 0 no-repeat;
+   background-size: 399px 381px;
+}
+
+.list4 {
+   top: 95px;
+   width: 237px;
+   height: 375px;
+   margin-left: 355px;
+   background: url(../img/spot_ico3.png) 0 0 no-repeat;
+   background-size: 237px 375px;
+   z-index: 110;
+}
+
+.list5 {
+   top: 408px;
+   width: 235px;
+   height: 188px;
+   margin-left: 732px;
+   background: url(../img/spot_ico4.png) 0 0 no-repeat;
+   background-size: 235px 188px;
+   z-index: 110;
+}
+
+.spot_bg2 {
+   position: relative;
+   width: 100% !important;
+   height: 210px !important;
+   margin-top: -210px;
+   z-index: 100;
+}
+
+/* container CSS */
+.container {
+   position: relative;
+   margin-top: -102px;
+}
+
+.section {
+   color: #595e65;
+   display: block;
+   clear: both;
+   content: '';
+}
+
+.section_inner {
+   width: 1280px;
+   margin: 0 auto;
+   position: relative;
+}
+
+.section_txt {
+   margin-bottom: 20px;
+   font-family:'NanumSquareR';
+   font-size: 17px;
+   line-height: 1.76;
+}
+
+/* section history CSS */
+.section_history {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   padding-top: 141px;
+   background-color: #fff;
+   z-index: 100;
+}
+
+.webtoon_corp {
+   overflow: hidden;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.webtoon_corp h3 {
+   width: 283px;
+   height: 90px;
+   background-position: -1px -2636px;
+}
+
+.webtoon_corp_txt {
+   margin: 5px 0 0 41px;
+}
+
+.webtoon_corp h4 {
+   margin-bottom: 21px;
+}
+
+.webtoon_history {
+   position: relative;
+   margin: 52px 0 86px;
+   display: block;
+   clear: both; /* float를 사용할 때 clear:both를 해줘야 깨지지 않음 */
+   content: '';
+}
+
+.webtoon_history:before {
+   position: absolute;
+   top: 52px;
+   width: 1280px;
+   height: 2px;
+   background-color: #f2f2f2;
+   z-index: -1;
+   content: '';
+}
+
+.history_list li {
+   float: left; 
+   text-align: center;
+}
+
+.history_list li strong {
+   display: block;
+   margin-bottom: 12px;
+   font-size: 15px;
+   line-height: 1.2;
+   letter-spacing: -0.3px;
+   color: #353b42;
+}
+
+.history_list li.color_type_green strong {
+   color: #00d564;
+}
+
+.history_list li .bg_circle {
+   display: block;
+   width: 10px;
+   height: 10px;
+   margin: 0 auto;
+   border-radius: 8px;
+   background-color: #353b42;
+   content: '';
+}
+
+.history_list li.color_type_green .bg_circle {
+   width: 16px;
+   height: 16px;
+   background-color: #00d564;
+}
+
+.history_list li .bg_bar {
+   display: block;
+   width: 2px;
+   height: 48px;
+   margin: 0 auto;
+   background-color: #424a54;
+   content: '';
+}
+
+.history_list li.color_type_green .bg_bar {
+   background-color: #00d564;
+}
+
+.webtoon_history li .date_box {
+   display: inline-block;
+   width: 103px;
+   height: 37px;
+   border-radius: 19px;
+   border: solid 2px #424a54;
+   text-align: center;
+   font-family:'NanumSquareEB';
+   font-size: 17px;
+   line-height: 35px;
+   letter-spacing: -0.5px;
+   color: #424a54;
+   box-sizing: border-box;
+}
+
+.history_list li.color_type_green .date_box {
+   border-color: #00d564;
+   color: #00d564;
+}
+
+.history_list li:nth-child(1) {
+   margin: 14px 0 13px;
+}
+
+.history_list li:nth-child(2) {
+   margin-left: 97px;
+}
+
+.history_list li:nth-child(3) {
+   margin: 48px 0 0 -22px;
+}
+
+.history_list li:nth-child(3) .bg_bar {
+   height: 100px;
+}
+
+.history_list li:nth-child(3) strong {
+   margin: 12px 0 0 0;
+}
+
+.history_list li:nth-child(4) {
+   margin-left: -22px;
+}
+
+.history_list li:nth-child(5) {
+   margin-left: 43px;
+}
+
+.history_list li:nth-child(6) {
+   margin-left: 38px;
+}
+
+.history_list li:nth-child(7) {
+   margin-left: 40px;
+}
+
+.history_list li:nth-child(7) strong {
+   margin: 3px 0 6px;
+}
+
+.history_list li:nth-child(8) {
+   margin-left: 67px;
+}
+
+.history_list li:nth-child(9) {
+   margin: 48px 0 0 -22px;
+}
+
+.history_list li:nth-child(9) .bg_bar {
+   height: 100px;
+}
+
+.history_list li:nth-child(9) strong {
+   margin: 12px 0 0 0;
+}
+
+.history_list li:nth-child(10) {
+   margin-left: -22px;
+}
+
+/* section service CSS */
+.section_service {
+   padding-top: 847px;
+}
+
+.section_inner_service {
+   width: 1338px;
+}
+
+.section_inner_service h3 {
+   width: 226px;
+   height: 54px;
+   margin-left: 29px;
+   background-position: 0 -981px;
+}
+
+.service_list {
+   margin: 38px 0 132px 0;
+   display: flex;
+}
+
+.service_list li {
+   text-align: center;
+}
+
+.service_list li:first-child {
+   width: 268px;
+   margin-left: 0;
+}
+
+.service_list li:nth-child(2) {
+   width: 247px;
+   margin-left: 13px;
+}
+
+.service_list li:nth-child(3) {
+   width: 254px;
+   margin-left: 19px;
+}
+
+.service_list li:nth-child(4) {
+   width: 248px;
+   margin-left: 19px;
+}
+
+.service_list li:nth-child(5) {
+   width: 248px;
+   margin-left: 22px;
+}
+
+.webtoon:before {
+   content: '';
+   display: inline-block;
+   background: url(../img/service_webtoon.svg) 0 0 no-repeat;
+   background-size: 200px 200px;
+   width: 200px;
+   height: 200px;
+   margin-bottom: 26px;
+}
+
+.novel:before {
+   content: '';
+   display: inline-block;
+   background: url(../img/service_webnovel.svg) 0 0 no-repeat;
+   background-size: 200px 200px;
+   width: 200px;
+   height: 200px;
+   margin-bottom: 26px;
+}
+
+.series:before {
+   content: '';
+   display: inline-block;
+   background: url(../img/service_series.svg) 0 0 no-repeat;
+   background-size: 200px 200px;
+   width: 200px;
+   height: 200px;
+   margin-bottom: 26px;
+}
+
+.series_on:before {
+   content: '';
+   display: inline-block;
+   background: url(../img/service_series_on.svg) 0 0 no-repeat;
+   background-size: 200px 200px;
+   width: 200px;
+   height: 200px;
+   margin-bottom: 26px;
+}
+
+.service_tit {
+   display: block;
+   margin-bottom: 10px;
+   font-size: 21px;
+   line-height: 1.33;
+   color: #353b42;
+   font-family: 'NanumSquareB';
+}
+
+.service_txt {
+   margin-bottom: 26px;
+   font-size: 15px;
+   line-height: 1.9;
+}
+
+.service_list .icon a {
+   display: inline-block;
+   width: 54px;
+   height: 53px;
+}
+
+.service_list .icon .and {
+   background-position: 0 -1697px;
+}
+
+.service_list .icon .ios {
+   margin: 0 5px 0 4px;
+   background-position: -58px -1697px;
+}
+
+.service_list .icon .web {
+   background-position: -116px -1697px;
+}
+
+/* section business CSS */
+.section_inner_business h3 {
+   width: 266px;
+   height: 54px;
+   margin-bottom: 26px;
+   background-position: 0 -1037px;
+}
+
+.section_txt {
+   margin-bottom: 41px;
+}
+
+.section_inner_site {
+   margin-bottom: 80px;
+   display: flex;
+}
+
+.section_inner_site li {
+   position: relative;
+   width: 50%;
+   border-top: 1px solid rgba(53, 59, 66, 0.77);
+   border-bottom: 1px solid #f2f2f2;
+   padding: 28px 0 37px;
+}
+
+.section_inner_site li:nth-child(2) {
+   margin-left: 36px;
+}
+
+.studion h4 {
+   margin: 4px 0 1px;
+   width: 182px;
+   height: 39px;
+   background-position: 0 -2500px;
+}
+
+.lico h4 {
+   margin: 11px 0 6px;
+   width: 91px;
+   height: 27px;
+   background-position: -200px -2500px;
+}
+
+.section_inner_site li p {
+   padding-top: 17px;
+   font-family:'NanumSquareB';
+   font-size: 17px;
+   color: #595e65;
+}
+
+.btn_more {
+   display: block;
+   position: absolute;
+   bottom: 32px;
+   right: 0;
+   width: 88px;
+   height: 37px;
+   background-position: -125px -2007px;
+}
+
+.business_img_list {
+   margin-bottom: 121px;
+   display: flex;
+}
+
+.business_img_list img {
+   width: 248px;
+   height: 248px;
+}
+
+.business_img_list li {
+   margin-left: 10px;
+}
+
+.business_img_list li:first-child {
+   margin-left: 0;
+}
+
+/* section careers CSS */
+.section_careers {
+   position: relative;
+   height: 837px;
+}
+
+.section_careers img {
+   width: 100%;
+   height: 837px;
+}
+
+.section_careers .section_inner {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   margin-left: -640px;
+   padding-top: 182px;
+}
+
+.section_careers h3 {
+   width: 249px;
+   height: 54px;
+   margin-bottom: 42px;
+   background-position: 0 -1093px;
+}
+
+.career_list {
+   margin-bottom: 11px;
+   display: flex;
+}
+
+.career_list li {
+   position: relative;
+   width: 33.333%;
+   height: 361px;
+   justify-content: center;
+}
+
+.section_careers .career_list li:nth-child(2) {
+   margin: 0 78px;
+}
+
+.career_list li:before {
+   display: block;
+   position: absolute;
+   bottom: 71px;
+   left: 0;
+   width: 375px;
+   height: 1px;
+   background-color: #353b42;
+   opacity: .77;
+   z-index: 10;
+   content: '';
+}
+
+.career_con {
+   padding: 1px 0 5px 0;
+}
+
+.career_list li span {
+   width: 42px;
+   height: 50px;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.career_list li:nth-child(1) span {
+   background-position: -174px -1700px;
+}
+
+.career_list li:nth-child(2) span {
+   background-position: -221px -1700px;
+}
+
+.career_list li:nth-child(3) span {
+   background-position: -268px -1700px;
+}
+
+.career_list li p {
+   margin-left: 5px;
+   font-family:'NanumSquareR';
+   font-size: 19px;
+   line-height: 1.37;
+   color: #353b42;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.career_list li:after {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 375px;
+   height: 290px;
+   z-index: 20;
+   content: '';
+}
+
+.career_list li:nth-child(1):after {
+   background: url(../img/careers4.png) 0 0 no-repeat;
+   background-size: 375px 290px;
+}
+
+.career_list li:nth-child(2):after {
+   background: url(../img/careers5.png) 0 0 no-repeat;
+   background-size: 375px 290px;
+}
+
+.career_list li:nth-child(3):after {
+   background: url(../img/careers6.png) 0 0 no-repeat;
+   background-size: 375px 290px;
+}
+
+.btn_recruit {
+   display: block;
+   width: 260px;
+   height: 90px;
+   margin: 0 auto;
+   background-position: -0 -1598px;
+}
+
+/* section contact CSS */
+.section_contact {
+   height: 773px;
+   background-color: #00d564;
+   background: url(../img/map.png) 0 0 no-repeat;
+   background-color: #00d564;
+   background-size: 754px 447px;
+   background-position-x: 645px;
+   content: '';
+   background-attachment: fixed;
+}
+
+.section_contact .section_inner {
+   position: relative;
+   height: 773px;
+}
+
+.section_contact h3 {
+   position: absolute;
+   top: 144px;
+   left: 0;
+   width: 344px;
+   height: 54px;
+   background-position: 0 -1149px;
+}
+
+.contact_area {
+   position: absolute;
+   top: 266px;
+   left: 0;
+   display: flex;
+}
+
+.contact_con {
+   margin-left: 4px;
+}
+
+.contact_con.office dt {
+   margin-bottom: 10px;
+   width: 198px;
+   height: 31px;
+   background-position: 0 -1204px;
+}
+
+.btn_map {
+   margin: 43px 0 0 12px;
+   font-size: 15px;
+   color: #fff;
+   position: relative;
+}
+
+.btn_map::after {
+   display: block;
+   position: absolute;
+   top: 20px;
+   left: 0;
+   width: 55px;
+   height: 1px;
+   background-color: #fff;
+   content: '';
+}
+
+.contact_area2 {
+   position: absolute;
+   top: 418px;
+   left: 0;
+}
+
+.contact_con.partnership {
+   margin-bottom: 26px;
+}
+
+.contact_con.partnership dt {
+   margin-bottom: 10px;
+   width: 191px;
+   height: 31px;
+   background-position: 0 -1232px;
+}
+
+.contact_con dd {
+   font-size: 17px;
+   line-height: 1.65;
+   color: #fff;
+}
+
+.btn_inquiry {
+   display: block;
+   width: 188px;
+   height: 66px;
+   margin-left: 4px;
+   background-position: -312px -1598px;
+}
+
+.contact_area span {
+   
+}
