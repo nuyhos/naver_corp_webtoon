@@ -1,3 +1,39 @@
 @charset "UTF-8";
 
 /* footer CSS */
+footer {
+   position: relative;
+   height: 90px;
+   background-color: #fff;
+}
+
+.footer_wrap {
+   width: 1280px;
+   margin: 0 auto;
+   padding: 37px 0 34px;
+   color: #b3b3b3;
+   font-size: 14px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.ft_menu {
+   display: flex;
+}
+
+.ft_menu li {
+   margin-left: 25px;
+}
+
+.ft_menu li:nth-child(1) {
+   margin-left: 0;
+}
+
+.ft_menu li a {
+   font-family: 'NanumSquareB';
+   color: #b3b3b3;
+}
+
+.ft_menu li:nth-child(2) a {
+   font-family: 'NanumSquareEB';
+}
